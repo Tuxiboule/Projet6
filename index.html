@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>JustStreamIt - Page d'accueil</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/JustStreamIt.png" alt="JustStreamIt Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Accueil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bienvenue sur JustStreamIt</h1>
+            <p>Découvrez les derniers films et séries dans un large choix de catégories.</p>
+        </div>
+    </section>
+
+    <section class="best-movie" id="Better_Film">
+        <h2>Meilleur film</h2>
+    </section>
+
+    <section class="categories">
+        <h2>Catégories de films</h2>
+        <div class="category">
+            <h3>Films les mieux notés</h3>
+            <div class="scrolling-container" id="Seven_Goat">
+            </div>
+        </div>
+
+        <div class="category">
+            <h3>Action</h3>
+            <div class="scrolling-container" id = "Action">
+            </div>
+        </div>
+
+        <div class="category">
+            <h3>Romance</h3>
+            <div class="scrolling-container" id = "Romance">
+            </div>
+               
+        </div>
+        <div class="category">
+            <h3>Adventure</h3>
+            <div class="scrolling-container" id = "Adventure">
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2023 JustStreamIt</p>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <img src="" alt="Détails du film" id="modal-image">
+            <div class="modal-misc">
+                <h2 id="modal-title"></h2>
+                <p id="modal-genre"></p>
+                <p id="modal-release-date"></p>
+                <p id="modal-rated"></p>
+                <p id="modal-imdb-score"></p>
+                <p id="modal-director"></p>
+                <p id="modal-actors"></p>
+                <p id="modal-duration"></p>
+                <p id="modal-country"></p>
+                <p id="modal-box-office"></p>
+                <p id="modal-summary"></p>
+            <!-- Ajoutez d'autres informations sur le film ici -->
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

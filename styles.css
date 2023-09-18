@@ -1,0 +1,148 @@
+/* Réinitialisation des styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    font-size: 18px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero {
+    background-image: url('img/hero-bg.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.categories {
+    padding: 20px;
+}
+
+.categories h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+.category img {
+    max-width: 100%;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.category {
+    width: calc(100% - 20px); /* Pour trois catégories par ligne */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.scrolling-container {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+}
+
+.film {
+    flex: 0 0 auto;
+    width: 200px; /* Largeur de chaque film */
+    text-align: center;
+}
+
+.film img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.film p {
+    overflow: hidden; /* Cache le texte qui dépasse */
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
+    text-overflow: ellipsis; /* Affiche "..." à la fin du texte coupé */
+}
+
+.better_film {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Définissez la largeur et la hauteur souhaitées */
+    width: 200px; /* Par exemple */
+    height: 200px; /* Par exemple */
+}
+
+/* Si vous voulez que l'image soit à l'intérieur d'une boîte, vous pouvez utiliser un sélecteur descendant */
+.better_film img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Pour ajuster l'image à la boîte sans déformation */
+}
+
+/* Style de la fenêtre modale */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 20% auto;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 600px;
+    position: relative;
+}
+
+.modal-misc {
+    float: right; /* Alignez les éléments p à droite */
+    margin-left: 5px; /* Ajoutez un peu d'espace entre l'image et les éléments p */
+    width: 65%; /* Ajustez la largeur comme souhaité */  
+}
