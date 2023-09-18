@@ -8,6 +8,7 @@
 /* Styles généraux */
 body {
     font-family: Arial, sans-serif;
+
 }
 
 header {
@@ -52,6 +53,8 @@ nav {
 
 .categories {
     padding: 20px;
+    width: 70%;
+    margin: auto;
 }
 
 .categories h2 {
@@ -72,14 +75,14 @@ footer {
 }
 
 .category {
-    width: calc(100% - 20px); /* Pour trois catégories par ligne */
-    margin-bottom: 20px;
-    text-align: center;
+  overflow: hidden; /* Masque tout contenu dépassant de la zone */
+  white-space: nowrap; /* Empêche le texte de passer à la ligne */
+  position: relative; /* Position relative pour positionner les flèches */
 }
 
 .scrolling-container {
     width: 100%;
-    overflow-x: auto;
+    overflow-x: hidden;
     white-space: nowrap;
     display: flex;
     gap: 20px;
@@ -130,19 +133,68 @@ footer {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    overflow: auto;
 }
 
 .modal-content {
-    background-color: #fff;
-    margin: 20% auto;
-    padding: 20px;
+    background-color: #3ec71c;
+    margin: 10% auto;
+    padding: 10px;
     border-radius: 5px;
-    max-width: 600px;
-    position: relative;
+    width: auto;
+    max-width: 50%;
+    height: 50%;
 }
 
-.modal-misc {
-    float: right; /* Alignez les éléments p à droite */
-    margin-left: 5px; /* Ajoutez un peu d'espace entre l'image et les éléments p */
-    width: 65%; /* Ajustez la largeur comme souhaité */  
+.modal-image {
+    max-width: 100%; /* Pour conserver la largeur d'origine de l'image */
+    height: auto; /* Pour conserver les proportions de l'image */
+    z-index: 2;
+}
+.modal-info {
+}
+
+.modal-header {
+    display: flex;
+    align-items: left;
+    margin-bottom: 10px;
+  }
+
+.modal-close {
+    position: absolute;
+    top: 10px; /* Ajustez la valeur pour définir la distance par rapport au haut */
+    right: 10px; /* Ajustez la valeur pour définir la distance par rapport à la droite */
+    cursor: pointer;
+    font-size: 20px;
+    color: #000;
+  }
+  
+  .modal-close:hover {
+    color: #ff0000; /* Changez la couleur au survol si vous le souhaitez */
+  }
+
+/* Styles pour les flèches de défilement */
+.category .scroll-left,
+.category .scroll-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 30px; /* Largeur des flèches (à personnaliser) */
+  background-color: rgba(0, 0, 0, 0.5); /* Couleur de fond des flèches (à personnaliser) */
+  display: none; /* Par défaut, masquez les flèches */
+}
+
+.category:hover .scroll-left,
+.category:hover .scroll-right {
+  display: block; /* Affichez les flèches au survol de la catégorie */
+  cursor: pointer;
+}
+
+.category .scroll-left {
+  left: 0;
+}
+
+.category .scroll-right {
+  right: 0;
 }

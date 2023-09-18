@@ -35,24 +35,32 @@
             <h3>Films les mieux notés</h3>
             <div class="scrolling-container" id="Seven_Goat">
             </div>
+            <div class="scroll-left">◄</div>
+            <div class="scroll-right">►</div>
         </div>
 
         <div class="category">
             <h3>Action</h3>
             <div class="scrolling-container" id = "Action">
             </div>
+            <div class="scroll-left">◄</div>
+            <div class="scroll-right">►</div>
         </div>
 
         <div class="category">
             <h3>Romance</h3>
             <div class="scrolling-container" id = "Romance">
             </div>
+            <div class="scroll-left">◄</div>
+            <div class="scroll-right">►</div>
                
         </div>
         <div class="category">
             <h3>Adventure</h3>
             <div class="scrolling-container" id = "Adventure">
             </div>
+            <div class="scroll-left">◄</div>
+            <div class="scroll-right">►</div>
         </div>
     </section>
 
@@ -63,10 +71,14 @@
 
     <div id="modal" class="modal">
         <div class="modal-content">
-            <img src="" alt="Détails du film" id="modal-image">
-            <div class="modal-misc">
+            <div class="modal-header">
+                <img src="" alt="Détails du film" id="modal-image">
                 <h2 id="modal-title"></h2>
                 <p id="modal-genre"></p>
+                <p id="modal-summary"></p>
+            </div>
+
+            <div class="modal-info">
                 <p id="modal-release-date"></p>
                 <p id="modal-rated"></p>
                 <p id="modal-imdb-score"></p>
@@ -75,9 +87,8 @@
                 <p id="modal-duration"></p>
                 <p id="modal-country"></p>
                 <p id="modal-box-office"></p>
-                <p id="modal-summary"></p>
-            <!-- Ajoutez d'autres informations sur le film ici -->
             </div>
+            <span id="modal-close" class="modal-close">X</span>
         </div>
     </div>
     <script src="js/main.js"></script>
