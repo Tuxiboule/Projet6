@@ -15,4 +15,3 @@ flake8
 
 #ignore certains fichiers
 test.py
-Pipfile
