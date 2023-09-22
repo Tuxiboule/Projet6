@@ -7,38 +7,39 @@
     <title>JustStreamIt - Page d'accueil</title>
 </head>
 <body>
+
+    <!-- Header Section-->
     <header>
         <nav>
             <div class="logo">
-                <img src="img/JustStreamIt.png" alt="JustStreamIt Logo">
+                <img src="img/logo.png" alt="JustStreamIt Logo">
             </div>
-            <ul class="nav-links">
-                <li><a href="#">Accueil</a></li>
-            </ul>
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Bienvenue sur JustStreamIt</h1>
-            <p>Découvrez les derniers films et séries dans un large choix de catégories.</p>
-        </div>
-    </section>
-
+    <!-- Best Movie Section -->
     <section class="best-movie" id="Better_Film">
-        <h2>Meilleur film</h2>
-    </section>
+        <div class="movie-content">
+            <div class="column-container">
+                <button class="play-button">Play</button>
+              </div>
+              <div class="row-container">
+              </div>
+            </div>
+      </section>
 
+    <!-- Categories Section -->
     <section class="categories">
         <h2>Catégories de films</h2>
         <div class="category">
             <h3>Films les mieux notés</h3>
-            <div class="scrolling-container" id="Seven_Goat">
+            <div class="scrolling-container" id="seven_better">
             </div>
             <div class="scroll-left">◄</div>
             <div class="scroll-right">►</div>
         </div>
 
+        <!-- Other Movie Categories - similar structure -->
         <div class="category">
             <h3>Action</h3>
             <div class="scrolling-container" id = "Action">
@@ -63,34 +64,36 @@
             <div class="scroll-right">►</div>
         </div>
     </section>
-
-
+ 
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2023 JustStreamIt</p>
     </footer>
-
+    <!-- Movie Details Modal (to be added in JavaScript) -->
     <div id="modal" class="modal">
-        <div class="modal-content">
+        <div class="modal-content modal-content-flex">
             <div class="modal-header">
-                <img src="" alt="Détails du film" id="modal-image">
-                <h2 id="modal-title"></h2>
-                <p id="modal-genre"></p>
-                <p id="modal-summary"></p>
-            </div>
-
-            <div class="modal-info">
-                <p id="modal-release-date"></p>
-                <p id="modal-rated"></p>
-                <p id="modal-imdb-score"></p>
-                <p id="modal-director"></p>
-                <p id="modal-actors"></p>
-                <p id="modal-duration"></p>
-                <p id="modal-country"></p>
-                <p id="modal-box-office"></p>
-            </div>
-            <span id="modal-close" class="modal-close">X</span>
+            <img alt="Détails du film" id="modal-image">
+                <div class = modal-top>
+                    <span id="modal-close" class="modal-close">X</span>
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-genre" class= "modal-genre"></p>
+                    <p id="modal-summary"></p>
+                    </div>
+                </div>
+                <div class="modal-info">
+                    <p id="modal-release-date"></p>
+                    <p id="modal-rated"></p>
+                    <p id="modal-imdb-score"></p>
+                    <p id="modal-director"></p>
+                    <p id="modal-actors"></p>
+                    <p id="modal-duration"></p>
+                    <p id="modal-country"></p>
+                    <p id="modal-box-office"></p>
+                </div>
         </div>
     </div>
+    <!-- JavaScript File -->
     <script src="js/main.js"></script>
 </body>
 </html>

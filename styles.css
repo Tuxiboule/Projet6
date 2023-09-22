@@ -1,20 +1,13 @@
-/* Réinitialisation des styles de base */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Styles généraux */
 body {
     font-family: Arial, sans-serif;
+    background-image: linear-gradient(to right, #b97206, #803402);   
 
 }
 
 header {
-    background-color: #000;
-    color: #fff;
-    padding: 10px 0;
+    height: 20%;
+    width: 20%;
+    position: fixed;
 }
 
 nav {
@@ -24,37 +17,18 @@ nav {
     padding: 0 20px;
 }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
 
-.nav-links li {
-    font-size: 18px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.hero {
-    background-image: url('img/hero-bg.jpg');
-    background-size: cover;
-    text-align: center;
-    padding: 100px 0;
-    color: #fff;
-}
-
-.hero h1 {
-    font-size: 36px;
+.logo img{
+    max-width: 100%;
+    height: 300px;
+    border-radius: 10px;
 }
 
 .categories {
     padding: 20px;
-    width: 70%;
+    width: 50%;
     margin: auto;
+    
 }
 
 .categories h2 {
@@ -71,60 +45,122 @@ footer {
     background-color: #000;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+
 }
 
 .category {
-  overflow: hidden; /* Masque tout contenu dépassant de la zone */
-  white-space: nowrap; /* Empêche le texte de passer à la ligne */
-  position: relative; /* Position relative pour positionner les flèches */
+  white-space: nowrap;
+  position: relative;
+  
 }
 
 .scrolling-container {
     width: 100%;
     overflow-x: hidden;
-    white-space: nowrap;
     display: flex;
-    gap: 20px;
-    padding-bottom: 20px;
-    margin-top: 10px;
+    align-items: center;
 }
 
 .film {
     flex: 0 0 auto;
-    width: 200px; /* Largeur de chaque film */
+    width: 200px;
     text-align: center;
 }
 
-.film img {
-    max-width: 100%;
+.film-img {
     height: auto;
+    cursor: pointer;
+    border-radius: 10%;
+    box-shadow: 0 0 10;
 }
+
+.film-img:hover {
+    filter: brightness(1.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: filter 0.3s ease, box-shadow 0.3s ease;
+  }
 
 
 .film p {
-    overflow: hidden; /* Cache le texte qui dépasse */
-    white-space: nowrap; /* Empêche le texte de passer à la ligne */
-    text-overflow: ellipsis; /* Affiche "..." à la fin du texte coupé */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 10px;
 }
 
-.better_film {
+.best-movie {
+    text-align: center;
+    padding: 20px;
+  }
+  
+.movie-content {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    /* Définissez la largeur et la hauteur souhaitées */
-    width: 200px; /* Par exemple */
-    height: 200px; /* Par exemple */
+    width: 50%; 
+    margin: 0 auto;
+    border: 5px solid #dd1212;
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+.column-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 10px;
+    align-items: center;
 }
 
-/* Si vous voulez que l'image soit à l'intérieur d'une boîte, vous pouvez utiliser un sélecteur descendant */
+.row-container {
+    align-items: center;
+    padding: 10px;
+    width: 50%;
+    display: flex;
+    font-weight: bolder;
+
+}
+
+.row-container p {
+    font-size: 30px;
+}
+
+.column-container p{
+    font-style: italic;
+}
+
+.movie-details {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
+  }
+  
+.movie-image {
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .play-button {
+    display: block;
+    margin-top: 5px;
+    background-color: beige;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 50px;
+    margin: 5px;
+    font-size: 20px;
+    align-self: auto;
+    flex-basis: 100%;
+    text-align: center;
+  }
+  
 .better_film img {
     max-width: 100%;
     max-height: 100%;
-    object-fit: contain; /* Pour ajuster l'image à la boîte sans déformation */
+    object-fit: contain;
 }
 
-/* Style de la fenêtre modale */
 .modal {
     display: none;
     position: fixed;
@@ -133,68 +169,90 @@ footer {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1;
-    overflow: auto;
 }
 
 .modal-content {
-    background-color: #3ec71c;
+    background-color: #dd1212;
     margin: 10% auto;
     padding: 10px;
     border-radius: 5px;
     width: auto;
     max-width: 50%;
-    height: 50%;
+    position: relative;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+  }
+
+  .modal-content-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 0;
 }
 
-.modal-image {
-    max-width: 100%; /* Pour conserver la largeur d'origine de l'image */
-    height: auto; /* Pour conserver les proportions de l'image */
-    z-index: 2;
+.modal-content-flex p {
+    flex: 1;
+    overflow-y: auto;
 }
-.modal-info {
+
+.modal #modal-image {
+    display:block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10%;
 }
+.modal-top {
+    flex-direction: column;
+    margin: 5px;
+}
+
 
 .modal-header {
     display: flex;
     align-items: left;
     margin-bottom: 10px;
   }
+.modal-genre {
+    font-style : italic;
+}
 
 .modal-close {
     position: absolute;
-    top: 10px; /* Ajustez la valeur pour définir la distance par rapport au haut */
-    right: 10px; /* Ajustez la valeur pour définir la distance par rapport à la droite */
+    right: 10px;
+    top: 10px;
     cursor: pointer;
     font-size: 20px;
     color: #000;
+    z-index: 1;
   }
   
   .modal-close:hover {
-    color: #ff0000; /* Changez la couleur au survol si vous le souhaitez */
+    color: #ff0000;
   }
 
-/* Styles pour les flèches de défilement */
+.modal p:hover{
+    cursor: pointer;
+    color: #ffffff;
+  }
+
 .category .scroll-left,
 .category .scroll-right {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 30px; /* Largeur des flèches (à personnaliser) */
-  background-color: rgba(0, 0, 0, 0.5); /* Couleur de fond des flèches (à personnaliser) */
-  display: none; /* Par défaut, masquez les flèches */
+  width: 15px;
+  display: block;
+  top: 50%;
 }
 
 .category:hover .scroll-left,
 .category:hover .scroll-right {
-  display: block; /* Affichez les flèches au survol de la catégorie */
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .category .scroll-left {
-  left: 0;
+    left: -20px;
 }
 
 .category .scroll-right {
-  right: 0;
+    right: -20px;
 }
