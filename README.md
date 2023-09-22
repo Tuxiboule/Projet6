@@ -23,6 +23,11 @@ Le site comporte les fonctionnalités suivantes :
    - Le résultat au Box Office
    - Le résumé du film
 
+## Lancement
+
+- Lancer l'api via les étapes décrites sur son repo https://github.com/OpenClassrooms-Student-Center/OCMovies-API-EN-FR
+- Ouvrir le fichier index.html
+
 ## Auteur
 
 Ce projet a été développé par [Guillaume Vinuesa](https://github.com/Tuxiboule).
