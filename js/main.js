@@ -114,7 +114,6 @@ async function better_from_genre(genre, url) {
  *
  * @param {string} genre - genre of the category to complete
  * @param {list} data_list - list with more informations about the films
- * @returns {} 
  */
 function assign_to_category(genre, data_list) {
   const container = document.getElementById(genre)
