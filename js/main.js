@@ -3,7 +3,6 @@ async function main() {
 
   // fetch & assign seven better films from "Action" "Romance" "Adventure" "seven_better" categories
   let data_list_action = await better_from_genre("Action", apiUrl);
-  data_list_action = await data_list_action;
   assign_to_category("Action", data_list_action);
   let data_list_romance = await better_from_genre("Romance", apiUrl);
   assign_to_category("Romance", data_list_romance);
