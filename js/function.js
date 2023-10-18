@@ -13,7 +13,7 @@ async function fetch_url(url) {
       console.error('Erreur:', error);
     }
   }
-  
+
   /**
    * find the better film of all by imdb rating
    *
@@ -88,7 +88,6 @@ async function fetch_url(url) {
     let data_list = [];
   
     return seven_first(data,data_list, url);
-  
   }
   
   /**
@@ -105,7 +104,6 @@ async function fetch_url(url) {
     let data_list = [];
   
     return seven_first(data,data_list,url);
-  
   }
   
   
@@ -130,10 +128,7 @@ async function fetch_url(url) {
       filmDiv.appendChild(img);
       filmDiv.appendChild(nomFilm);
       container.appendChild(filmDiv);
-  
     })
-    
-  
   }
   /**
    * Returns more information about a film from his image url

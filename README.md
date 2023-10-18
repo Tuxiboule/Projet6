@@ -1,33 +1,57 @@
-# JustStreamIt
+# Just Stream It
+![](icon.png)
 
-Ce site web en html / css / python permet d'afficher des informations de films depuis une API
+## About
+This website, developed using HTML, CSS, and Java, displays movie information retrieved from a Python API.
+
+## Features
+The site offers the following features:
+
+- Display of the best movies
+- Display of the best movies in a specific category
+- Display of the overall best movie
+- A modal window provides more information about a movie when clicked, including:
+   - Movie cover image
+   - Movie title
+   - Complete genre
+   - Release date
+   - Rating
+   - IMDb score
+   - Director
+   - List of actors
+   - Duration
+   - Country of origin
+   - Box Office results
+   - Movie summary
 
 
-## Fonctionnalités
+## Usage
 
-Le site comporte les fonctionnalités suivantes :
-- Affichage des meilleurs films
-- Affichage des meilleurs films d'une catégorie
-- Affichage du meilleur film toutes catégories
-- Une fenetre modale donne plus d'informations sur un film en cliquant dessus
-   - L’image de la pochette du film
-   - Le Titre du film
-   - Le genre complet du film
-   - Sa date de sortie
-   - Son Rated
-   - Son score Imdb
-   - Son réalisateur
-   - La liste des acteurs
-   - Sa durée
-   - Le pays d’origine
-   - Le résultat au Box Office
-   - Le résumé du film
+- Start the API by following the steps described on its repository: https://github.com/OpenClassrooms-Student-Center/OCMovies-API-EN-FR
+- Open the index.html file
 
-## Lancement
+## Context - Develop a user interface for a Python web application.
 
-- Lancer l'api via les étapes décrites sur son repo https://github.com/OpenClassrooms-Student-Center/OCMovies-API-EN-FR
-- Ouvrir le fichier index.html
+- First web project. Learning front-end (HTML CSS) was challenging, and learning Java was a great pleasure, motivating me to continue improving in front-end development.
+- First use of an API, I find the concept very interesting.
+- I really enjoyed JavaScript for its ability to execute functions asynchronously
 
-## Auteur
+## Skills
 
-Ce projet a été développé par [Guillaume Vinuesa](https://github.com/Tuxiboule).
+- Front-end
+  - Javascript
+    - Overflow managment
+  - HTML5 / CSS3 / Sass
+  - Linting
+    - W3C Validator
+
+- Back-end 
+  - Javascript
+    - Data Parsing
+     - Fetching
+    - API interaction
+
+
+
+## Credits
+[Tuxiboule](https://github.com/Tuxiboule)

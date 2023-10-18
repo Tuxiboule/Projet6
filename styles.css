@@ -70,7 +70,6 @@ footer {
     height: auto;
     cursor: pointer;
     border-radius: 10%;
-    box-shadow: 0 0 10;
 }
 
 .film-img:hover {
@@ -206,7 +205,6 @@ footer {
 
 .modal-header {
     display: flex;
-    align-items: left;
     margin-bottom: 10px;
   }
   
@@ -223,7 +221,7 @@ footer {
     color: #000;
     z-index: 1;
   }
-  
+
   .modal-close:hover {
     color: #ff0000;
   }
