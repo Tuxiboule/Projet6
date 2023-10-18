@@ -32,6 +32,7 @@ The site offers the following features:
 
 ## Context - Develop a user interface for a Python web application.
 
+- TThe Python API was provided in advance for this project, and I did not contribute to its creation
 - First web project. Learning front-end (HTML CSS) was challenging, and learning Java was a great pleasure, motivating me to continue improving in front-end development.
 - First use of an API, I find the concept very interesting.
 - I really enjoyed JavaScript for its ability to execute functions asynchronously
