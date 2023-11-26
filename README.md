@@ -27,15 +27,15 @@ The site offers the following features:
 
 ## Usage
 
-- Start the API by following the steps described on its repository: https://github.com/OpenClassrooms-Student-Center/OCMovies-API-EN-FR
+- Start the API by following the steps described in the repository: https://github.com/OpenClassrooms-Student-Center/OCMovies-API-EN-FR
 - Open the index.html file
 
 ## Context - Develop a user interface for a Python web application.
 
-- TThe Python API was provided in advance for this project, and I did not contribute to its creation
+- The Python API was provided in advance for this project, and I did not contribute to its creation
 - First web project. Learning front-end (HTML CSS) was challenging, and learning Java was a great pleasure, motivating me to continue improving in front-end development.
 - First use of an API, I find the concept very interesting.
-- I really enjoyed JavaScript for its ability to execute functions asynchronously
+- I really enjoyed JavaScript for its ability to execute functions asynchronously.
 
 ## Skills
 
